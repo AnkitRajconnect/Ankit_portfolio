@@ -1,38 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Ankit</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Ankit — Marketing Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <nav>
-    <a href="index.html" class="logo">Ankit.</a>
-    <ul class="nav-links">
-      <li><a href="work.html">Work</a></li>
-      <li><a href="about.html" style="border-bottom: 2px solid #2C2C2C;">About</a></li>
+  <!-- ── NAVIGATION ── -->
+  <nav class="site-nav">
+    <a href="index.html" class="nav-logo">Ankit Raj</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="about.html" class="active">About Me</a></li>
+      <li><a href="#" target="_blank">Resume</a></li>
+      <li><a href="work.html">Portfolio</a></li>
+      <li><a href="mailto:ankitraj@email.com">Contact</a></li>
     </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
-  <div class="container split-layout">
-    <div class="image-container" style="background-color: var(--accent-yellow);">
-       <img src="profile.jpg" alt="Ankit working">
+  <div class="page">
+
+    <!-- ── ABOUT GRID ── -->
+    <div class="about-grid">
+
+      <!-- LEFT: Content -->
+      <div class="about-content">
+
+        <span class="about-greeting fade-up fade-up-1">Hello</span>
+
+        <h1 class="fade-up fade-up-2">
+          I'm a full-stack marketer working at the intersection of<br/>
+          <em>creativity, data,</em><br/>
+          and growth.
+        </h1>
+
+        <p class="fade-up fade-up-3">
+          I blend rigorous data analysis with bold entrepreneurship to build brand strategies that actually perform. From integrated campaigns to startup business models, I connect strategy with storytelling to drive real, measurable results.
+        </p>
+
+        <p class="fade-up fade-up-3">
+          With experience spanning e-commerce, startups, and both product and consumer marketing, I help brands find their voice and put it to work. I turn creative ideas into campaigns that perform — balancing design, data, and thoughtful execution to build meaningful brand experiences.
+        </p>
+
+        <p class="fade-up fade-up-3">
+          I thrive in collaborative environments where passionate people are building things that matter, and I bring clarity, curiosity, and hands-on energy to every project.
+        </p>
+
+        <div class="fade-up fade-up-4">
+          <p style="font-size:0.65rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--light);margin-bottom:16px;margin-top:36px;">Core Expertise</p>
+          <ul class="about-skills-list">
+            <li>Brand Strategy</li>
+            <li>Content Creation</li>
+            <li>SEO &amp; Content Marketing</li>
+            <li>Paid Search / SEM</li>
+            <li>Social Media (Organic &amp; Paid)</li>
+            <li>Data &amp; Analytics</li>
+            <li>Integrated Campaigns</li>
+            <li>Partnerships &amp; Events</li>
+            <li>Go-to-Market Strategy</li>
+            <li>Public Relations</li>
+          </ul>
+        </div>
+
+        <div class="fade-up fade-up-5" style="margin-top:40px;display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="work.html" class="btn btn-dark">View Portfolio</a>
+          <a href="#" target="_blank" class="btn btn-outline">Download Resume</a>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Photo + Social -->
+      <div class="about-sidebar fade-up fade-up-2">
+
+        <div class="about-photo-wrap">
+          <img
+            src="profile.jpg"
+            alt="Ankit Raj"
+            onerror="this.style.background='#E2DDD5';this.style.height='420px';this.src='';"
+          />
+        </div>
+
+        <div class="about-social">
+          <p>Follow</p>
+          <div class="about-social-links">
+            <a href="https://linkedin.com/in/ankitrajconnect" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://twitter.com/ankitraj" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+              Twitter / X
+            </a>
+            <a href="mailto:ankitraj@email.com">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+              ankitraj@email.com
+            </a>
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="text-content">
-      <h1 style="font-size: 3.5rem;">The Strategist</h1>
-      <p>I am currently pursuing my MSc in Marketing Strategy at Grenoble Ecole de Management. My approach to marketing lives at the intersection of rigorous data analysis and creative problem-solving.</p>
-      
-      <p>Whether I am running logistic regressions in R to uncover hidden insights, mapping out a go-to-market strategy for a waterless urinal valve, or building pitch decks for startups, I focus on creating strategies grounded in reality.</p>
-      
-      <div style="margin-top: 40px;">
-        <h3 style="margin-bottom: 16px; font-size: 1.5rem;">Let's Connect</h3>
-        <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+    <!-- ── EXPERIENCE ── -->
+    <div class="experience-section fade-up">
+
+      <h2 class="exp-heading">Experience</h2>
+
+      <div class="exp-item">
+        <div class="exp-date">2023 — Present</div>
+        <div class="exp-details">
+          <h3>Marketing Strategist</h3>
+          <p class="exp-company">Independent / Freelance</p>
+          <p>Go-to-market strategy, brand positioning, and integrated campaign development for early-stage startups and growth-stage brands. Projects spanning alpine tourism, e-commerce, and B2B SaaS.</p>
+        </div>
       </div>
+
+      <div class="exp-item">
+        <div class="exp-date">2021 — 2023</div>
+        <div class="exp-details">
+          <h3>Senior Marketing Manager</h3>
+          <p class="exp-company">Previous Company</p>
+          <p>Led cross-channel marketing strategy across paid search, organic social, email, and content. Managed a team of three and oversaw a $400K annual media budget. Improved ROAS by 34% through audience segmentation and creative testing.</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-date">2019 — 2021</div>
+        <div class="exp-details">
+          <h3>Digital Marketing Specialist</h3>
+          <p class="exp-company">Agency / Previous Role</p>
+          <p>End-to-end campaign management for 10+ clients across e-commerce and services. Specialized in SEO, content strategy, and paid media. Built analytics dashboards that became the agency's standard reporting framework.</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-date">2017 — 2019</div>
+        <div class="exp-details">
+          <h3>Marketing Coordinator</h3>
+          <p class="exp-company">First Role</p>
+          <p>Supported brand management, social media execution, and event coordination. Contributed to the development of brand guidelines and helped produce content across email, social, and digital advertising.</p>
+        </div>
+      </div>
+
     </div>
-  </div>
+
+  </div><!-- /.page -->
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Ankit Raj</span>
+      <nav class="footer-links">
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="mailto:ankitraj@email.com">Contact</a>
+      </nav>
+      <span class="footer-copy">© 2026 Ankit Raj</span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    // Scroll-triggered animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.exp-item').forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      el.style.transition = `opacity 0.55s ease ${i * 0.1}s, transform 0.55s ease ${i * 0.1}s`;
+      observer.observe(el);
+    });
+  </script>
 
 </body>
 </html>
