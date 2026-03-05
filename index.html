@@ -1,68 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankit | Marketing Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-:root {
-  --pink: #FFC4D1; /* Cotton candy pink */
-  --yellow: #FDE047; /* Bright yellow accent */
-  --black: #1A1A1A; /* Stark contrast black */
-  --bg: #FFFFFF; /* Clean white space */
-}
+  <nav>
+    <a href="index.html" class="logo">Ankit.</a>
+    <ul>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
 
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: var(--black);
-  background-color: var(--bg);
-  -webkit-font-smoothing: antialiased;
-}
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Marketing<br>Strategist.</h1>
+      <p>I blend rigorous data analysis with bold entrepreneurship to build brand strategies that actually perform. From integrated campaigns to startup business models, I connect strategy with storytelling.</p>
+      <a href="work.html" class="btn">View My Work</a>
+    </div>
+    
+    <div class="hero-visual">
+      <div class="image-wrapper">
+        <div class="shape-pink"></div>
+        <div class="shape-yellow"></div>
+        <img src="profile.jpg" alt="Ankit Headshot">
+      </div>
+    </div>
+  </div>
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 8%;
-  align-items: center;
-}
-
-nav .logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--black);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--black);
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-nav a:hover { color: var(--pink); }
-
-/* The Shirene-Style Split Hero */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 8% 80px;
-  min-height: 75vh;
-}
-
-.hero-text {
-  flex: 1;
-  max-width: 550px;
-}
-
-.hero-text h1 {
-  font-family: 'Playfair Display', serif;
+</body>
+</html>
