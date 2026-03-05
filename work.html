@@ -3,26 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ankit — Strategy & Insights</title>
+  <title>Work | Ankit</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Specific styles for the expandable list */
+    .project-list {
+      max-width: 900px;
+      margin: 60px auto;
+      border-top: 2px solid var(--text-main);
+    }
+
+    .project-item {
+      border-bottom: 1px solid rgba(44, 44, 44, 0.2);
+    }
+
+    .project-header {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 2fr auto;
+      align-items: center;
+      padding: 32px 0;
+      background: none;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      color: var(--text-main);
+      transition: opacity 0.3s ease;
+    }
+
+    .project-header:hover {
+      opacity: 0.6;
+    }
+
+    .project-header h2 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .project-category {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-light);
+    }
+
+    .toggle-icon {
+      font-size: 2rem;
+      font-weight: 300;
+      transition: transform 0.4s ease;
+    }
+
+    /* The hidden content section */
+    .project-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .content-inner {
+      padding: 0 0 40px 0;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 60px;
+    }
+
+    .content-inner p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      margin-bottom: 24px;
+    }
+
+    /* Active State (When Clicked) */
+    .project-item.active .project-content {
+      max-height: 1000px; /* Expands to fit content */
+    }
+
+    .project-item.active .toggle-icon {
+      transform: rotate(45deg); /* Turns the + into an x */
+    }
+
+    @media (max-width: 768px) {
+      .project-header {
+        grid-template-columns: 1fr auto;
+        gap: 8px;
+        padding: 24px 0;
+      }
+      .project-category { display: none; } /* Hide category on small mobile to keep it clean */
+      .content-inner { grid-template-columns: 1fr; gap: 24px; }
+      .project-header h2 { font-size: 1.8rem; }
+    }
+  </style>
 </head>
 <body>
 
   <nav>
     <a href="index.html" class="logo">Ankit.</a>
     <ul class="nav-links">
-      <li><a href="work.html">Work</a></li>
+      <li><a href="work.html" style="border-bottom: 2px solid #2C2C2C;">Work</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
   </nav>
 
-  <div class="container hero">
-    <h1>Blending <span class="hero-highlight">data analytics</span> with thoughtful brand strategy.</h1>
-    <p>I help brands connect strategy with storytelling to drive real results. Currently pursuing an MSc in Marketing Strategy, looking to bring bold ideas to life.</p>
-    <div>
-      <a href="work.html" class="btn">View My Work</a>
-    </div>
-  </div>
+  <div class="container">
+    <h1 style="font-size: 3.5rem; margin-bottom: 20px;">Selected Projects</h1>
+    <p style="color: var(--text-light); max-width: 600px; margin-bottom: 40px;">Click on any project to view the strategic approach and deliverables.</p>
+    
+    <div class="project-list">
+      
+      <div class="project-item">
+        <button class="project-header">
+          <h2>BeeAlp</h2>
+          <span class="project-category">IMC & Crowdfunding Strategy</span>
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="project-content">
+          <div class="content-inner">
+            <div>
+              <h4 style="text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.1em; margin-bottom: 8px;">The Challenge</h4>
+              <p>Launching a new brand in a competitive market requires early adoption and funding. The objective was to build a comprehensive roadmap to secure initial backing.</p>
+            </div>
+            <div>
+              <h4 style="text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.1em; margin-bottom: 8px;">The Strategy</h4>
+              <p>Developed a targeted Integrated Marketing Communications (IMC) plan, mapping the consumer ecosystem to ensure consistent messaging across digital channels. The deliverable included a phased pre-launch and mid-campaign momentum strategy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-</body>
-</html>
+      <div class="project-item">
+        <button class="project-header">
+          <h2>PSG</h2>
+          <span class="project-category">Brand Audit & Analysis</span>
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="project-content">
+          <div class="content-inner">
+            <div>
+              <h4 style="text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.1em; margin-bottom: 8px;">The Challenge</h4>
+              <p>Understanding how a regional sports team transitions into a global lifestyle and luxury brand.</p>
+            </div>
+            <div>
+              <h4 style="text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.1em; margin-bottom: 8px;">The Strategy</h4>
+              <p>Conducted a deep-dive WHO/WHAT/HOW analysis. Decoded Paris Saint-Germain's brand positioning, exploring their partnerships, merchandise ecosystem, and global consumer appeal beyond just the sport of football.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <button class="project-header">
+          <h2>CareerLedger</h2>
+          <span class="project-category">Startup Ecosystem & Pitch</span>
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="project-content">
+          <div class="content-inner">
+            <div>
+              <h4 style="text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.1em; margin-bottom: 8px;">The Challenge</h4>
+              <p>Taking an innovative startup concept from zero to one by defining its market viability and structure.</p>
+            </div>
+            <div>
+              <h4 style="text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.1em; margin-bottom: 8px;">The Strategy</h4>
+              <p>Designed a comprehensive business model and mapped the surrounding market ecosystem. Culminated in the development of a structured pitch deck aimed at effectively communicating value to early-stage stakeholders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <button class="project-header">
+          <h2>Product Design</h2>
+          <span class="project-category">Go-to-Market Strategy</span>
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="project-content">
+          <div class="content-inner">
+            <div>
+              <h4 style="text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.1em; margin-bottom: 8px;">The Challenge</h4>
+              <p>Evaluating the market readiness and patent viability for a sustainable hardware product (a waterless urinal valve).</p>
+            </div>
