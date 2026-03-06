@@ -1,87 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ankit Raj | Marketing Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Raj | Marketing Strategy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ── NAVIGATION ── -->
-  <nav class="site-nav">
-    <a href="index.html" class="nav-logo">Ankit Raj</a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="#" target="_blank">Resume</a></li>
-      <li><a href="work.html">Portfolio</a></li>
-      <li><a href="mailto:ankitraj@email.com">Contact</a></li>
-    </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+    <nav>
+        <div class="logo">Ankit Raj</div>
+        <a href="mailto:your.email@example.com" style="font-weight: 500;">Get in touch</a>
+    </nav>
 
-  <div class="page">
-
-    <!-- ── HERO ── -->
-    <section class="hero">
-
-      <div class="hero-text">
-        <span class="hero-label fade-up fade-up-1">Marketing Portfolio</span>
-
-        <h1 class="hero-name fade-up fade-up-2">
-          <span>Ankit</span>
-          <span>Raj</span>
-        </h1>
-
-        <p class="hero-title fade-up fade-up-3">Marketing Strategist</p>
-
-        <p class="hero-bio fade-up fade-up-4">
-          I blend rigorous data analysis with bold entrepreneurship to build brand strategies that actually perform. From integrated campaigns to startup business models, I connect strategy with storytelling.
-        </p>
-
-        <div class="hero-actions fade-up fade-up-5">
-          <a href="work.html" class="btn btn-dark">View Portfolio</a>
-          <a href="about.html" class="btn btn-outline">About Me</a>
-        </div>
-
-        <div class="hero-social fade-up fade-up-5">
-          <a href="https://linkedin.com/in/ankitrajconnect" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="mailto:ankitraj@email.com">Email</a>
-        </div>
-      </div>
-
-      <div class="hero-photo fade-up fade-up-3">
-        <img
-          src="profile.jpg"
-          alt="Ankit Raj"
-          onerror="this.style.background='#E2DDD5';this.style.height='480px';this.removeAttribute('src');"
-        />
-      </div>
-
-    </section>
-
-  </div>
-
-  <!-- ── FOOTER ── -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <span class="footer-logo">Ankit Raj</span>
-      <nav class="footer-links">
-        <a href="about.html">About</a>
-        <a href="work.html">Work</a>
-        <a href="mailto:ankitraj@email.com">Contact</a>
-      </nav>
-      <span class="footer-copy">© 2026 Ankit Raj</span>
+    <div class="container hero">
+        <h1>Strategic marketing,<br>designed for impact.</h1>
+        <p>I build data-driven go-to-market strategies, funnel optimizations, and compelling brand narratives.</p>
     </div>
-  </footer>
 
-  <script>
-    const toggle = document.getElementById('navToggle');
-    const links  = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
-  </script>
+    <div class="container">
+        <div class="project-grid">
+            
+            <div class="card">
+                <span class="tag">Digital GTM Strategy</span>
+                <h3>BeeAlp</h3>
+                <p>An integrated launch campaign for Europe's first circular premium smartphone subscription, targeting a €500K crowdfunding goal.</p>
+                <a href="projects/beealp.html" class="btn">Read Case Study →</a>
+            </div>
+
+            <div class="card">
+                <span class="tag">Startup Incubation</span>
+                <h3>CareerLedger</h3>
+                <p>Developing a verified portfolio business model and market positioning strategy for an upcoming incubator pitch.</p>
+                <a href="#" class="btn" style="background-color: var(--text-light);">Coming Soon</a>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 </html>
